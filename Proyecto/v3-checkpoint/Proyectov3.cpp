@@ -325,7 +325,6 @@ bool guardarDatos(const vector<Alumno>& alumnos, const vector<Grupo>& grupos,
         return false;
     }
 
-    
     if (rename(temporal.c_str(), ARCHIVO_DATOS.c_str()) != 0) {
         const string respaldo = ARCHIVO_DATOS + ".bak";
         remove(respaldo.c_str());
