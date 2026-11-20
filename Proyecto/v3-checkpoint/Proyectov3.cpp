@@ -90,7 +90,6 @@ float leerFloat(string mensaje, float min, float max) {
             continue;
         }
 
-        // Escrito asi tambien rechaza "nan"
         if (!(valor >= min && valor <= max)) {
             cout << "El valor debe estar entre " << min << " y " << max << ". Intente de nuevo." << endl;
             continue;
